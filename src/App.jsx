@@ -18,7 +18,7 @@ import {
   Link as LinkIcon
 } from 'lucide-react';
 
-// --- TAM LİSTE (Videodaki sıraya ve içeriğe göre 63+ Kuruluş) ---
+// --- TAM LİSTE (Düzeltilmiş ve Doğrulanmış İsimler) ---
 const fintechData = [
   // --- Popüler / Büyükler ---
   {
@@ -42,7 +42,7 @@ const fintechData = [
   },
   {
     id: 3,
-    name: "Pep",
+    name: "PeP",
     status: "inactive",
     category: "Transfer",
     description: "Eskiden yurt dışı transferlerinde liderdi ancak şu an rekabet gücünü kaybetti.",
@@ -91,7 +91,7 @@ const fintechData = [
   },
   {
     id: 8,
-    name: "Trendyol Pay",
+    name: "Trendyol Cüzdan",
     status: "inactive",
     category: "E-Ticaret",
     owner: "Trendyol",
@@ -110,7 +110,7 @@ const fintechData = [
   },
   {
     id: 10,
-    name: "Money Pay",
+    name: "MoneyPay",
     status: "active",
     category: "Perakende",
     owner: "Migros",
@@ -206,21 +206,21 @@ const fintechData = [
   // --- Diğerleri (Alfabetik/Grup) ---
   { id: 19, name: "Mor Para", status: "neutral", category: "Diğer", description: "İrili ufaklı bir şirket. Ek hizmet sunamıyor.", videoNote: "Yasal kullanılabilir ama küçük." },
   { id: 20, name: "AHL Pay", status: "neutral", category: "Diğer", description: "Reklamlarla çıktı ama şu an sessiz.", videoNote: "Kimse konuşmuyor artık." },
-  { id: 21, name: "Manibux (Manitolya)", status: "neutral", category: "Diğer", description: "Papara alternatifi sunuldu ama cashback yetersiz.", videoNote: "Adam akıllı cashback yok." },
+  { id: 21, name: "Manibux", status: "neutral", category: "Diğer", description: "Papara alternatifi sunuldu ama cashback yetersiz.", videoNote: "Adam akıllı cashback yok." },
   { id: 22, name: "Biso", status: "neutral", category: "Transfer", description: "Sadece para transferi, cüzdan özelliği kısıtlı.", videoNote: "Cüzdan olarak kullanılamıyor." },
   { id: 23, name: "İstanbulKart", status: "active", category: "Ulaşım", description: "Fatura ödeme hariç birçok işlem yapılıyor.", videoNote: "Ulaşım ve marketlerde geçiyor." },
   { id: 24, name: "BPN", status: "neutral", category: "Transfer", description: "Sadece para transferi odaklı.", videoNote: "İsmi sanı duyulmamış." },
   { id: 25, name: "CMT Cüzdan", status: "caution", category: "Riskli", description: "Paraların içeride kaldığına dair şikayetler var.", videoNote: "Dolandırıcılık iddiaları, dikkat." },
-  { id: 26, name: "Dinamic Pay", status: "neutral", category: "Transfer", description: "Cüzdan hizmeti zayıf, transfer odaklı.", videoNote: "Transferle öne çıkan uygulama." },
-  { id: 27, name: "Opet Pay", status: "active", category: "Ulaşım", description: "Opet yakıt puanları için kullanışlı.", videoNote: "Arabayla seyahat edenler için." },
+  { id: 26, name: "Dynamic (Dinamik) Pay", status: "neutral", category: "Transfer", description: "Cüzdan hizmeti zayıf, transfer odaklı.", videoNote: "Transferle öne çıkan uygulama." },
+  { id: 27, name: "Opet Bilgi (Opet Pay)", status: "active", category: "Ulaşım", description: "Opet yakıt puanları için kullanışlı.", videoNote: "Arabayla seyahat edenler için." },
   { id: 28, name: "DenizPay", status: "inactive", category: "Banka Destekli", description: "Artık adı sanı hatırlanmıyor.", videoNote: "Eskiden kullanılırdı, şimdi yok." },
-  { id: 29, name: "Elpay (Parazula)", status: "caution", category: "Diğer", description: "Eski ismi Elpay, şu an Parazula/Paybull altında.", videoNote: "Önceden yasaklanmış bir kuruluş." },
+  { id: 29, name: "Parazula (Eski Elpay)", status: "caution", category: "Diğer", description: "Eski ismi Elpay, şu an Parazula/Paybull altında.", videoNote: "Önceden yasaklanmış bir kuruluş." },
   { id: 30, name: "Faturamatik", status: "active", category: "Fatura", description: "Fatura ödeniyor ama komisyon yüksek.", videoNote: "Bankadan ödemek daha mantıklı." },
   { id: 31, name: "Fairpay", status: "inactive", category: "Diğer", description: "Şu an hizmet vermiyor, yeni oluşum.", videoNote: "Yakında açılacağı umuluyor." },
-  { id: 32, name: "Fzy Pay (Easy)", status: "banned", category: "Yasaklı/Riskli", description: "Mal varlığı donduruldu.", videoNote: "Direkt yasaklı, kullanamazsınız." },
+  { id: 32, name: "Fizy (Fzy) Pay", status: "banned", category: "Yasaklı/Riskli", description: "Mal varlığı donduruldu.", videoNote: "Direkt yasaklı, kullanamazsınız." },
   { id: 33, name: "Gönderal", status: "neutral", category: "Transfer", description: "Sadece para transferine çalışıyor.", videoNote: "Tüm izinler var ama sadece transfer." },
   { id: 34, name: "Parao", status: "neutral", category: "Diğer", description: "Yakında gelecek deniyor.", videoNote: "Kartları yakında gelecek." },
-  { id: 35, name: "High", status: "neutral", category: "Diğer", description: "Hakkında çok bilgi yok.", videoNote: "İncelemeye değer görülmedi." },
+  { id: 35, name: "HiPay (High)", status: "neutral", category: "Diğer", description: "Hakkında çok bilgi yok.", videoNote: "İncelemeye değer görülmedi." },
   { id: 36, name: "IstPay", status: "inactive", category: "Diğer", description: "Görünürde var ama yok.", videoNote: "Kullanıcısı var mı bilinmiyor." },
   { id: 37, name: "Iyzico", status: "active", category: "E-Ticaret", description: "Daha çok POS hizmeti, bireysel cüzdanı karışık.", videoNote: "Mobil uygulaması çok karışık." },
   { id: 38, name: "Junom", status: "neutral", category: "Diğer", description: "Sadece web sitesi var.", videoNote: "Ne olduğu çözülemedi." },
@@ -229,9 +229,9 @@ const fintechData = [
   { id: 41, name: "Turan", status: "recommended", category: "Transfer", description: "Türk devletlerine para transferi (Moka altyapısı).", videoNote: "Moka altyapısı." },
   { id: 42, name: "Moneymate", status: "neutral", category: "Diğer", description: "Adı sanı duyulmamış.", videoNote: "Cashback hizmeti yok." },
   { id: 43, name: "Moneyout", status: "neutral", category: "Diğer", description: "Bilinmiyor.", videoNote: "Bilinmiyor." },
-  { id: 44, name: "Nomapay", status: "neutral", category: "Diğer", description: "Havale ve fatura ödeme yok.", videoNote: "Kimse duymadı." },
+  { id: 44, name: "NomaPay", status: "neutral", category: "Diğer", description: "Havale ve fatura ödeme yok.", videoNote: "Kimse duymadı." },
   { id: 45, name: "Papel", status: "inactive", category: "Diğer", description: "Yakın zamanda kapandı.", videoNote: "Yazık oldu, güzel cashbackleri vardı." },
-  { id: 46, name: "Para Kolay", status: "neutral", category: "Diğer", description: "Fatura hizmeti yok.", videoNote: "İsmi duyulmadı." },
+  { id: 46, name: "Parakolay", status: "neutral", category: "Diğer", description: "Fatura hizmeti yok.", videoNote: "İsmi duyulmadı." },
   { id: 47, name: "Paratim", status: "neutral", category: "Diğer", description: "Ses soluk yok.", videoNote: "Tutunamadılar." },
   { id: 48, name: "ParaQR", status: "banned", category: "Yasaklı/Riskli", description: "İzinleri kapatıldı.", videoNote: "B ve C izinleri kapalı." },
   { id: 49, name: "Parolapara", status: "banned", category: "Yasaklı/Riskli", description: "İzinleri kapatıldı.", videoNote: "B ve C izinleri kapalı." },
@@ -242,15 +242,15 @@ const fintechData = [
   { id: 54, name: "QPay", status: "neutral", category: "Diğer", description: "İsmi duyan yok.", videoNote: "İzinleri var ama bilen yok." },
   { id: 55, name: "Rubik Para", status: "neutral", category: "Diğer", description: "Kullanıcı sayısı çok az.", videoNote: "İncelemeye değmez." },
   { id: 56, name: "SBM", status: "neutral", category: "Kurumsal", description: "Yurt dışı ve iş dünyası odaklı.", videoNote: "Niş bir kitle." },
-  { id: 57, name: "CPay", status: "inactive", category: "Diğer", description: "Kapalı olarak görünüyor.", videoNote: "Tarihin tozlu raflarında." },
+  { id: 57, name: "Sipay (CPay)", status: "inactive", category: "Diğer", description: "Kapalı olarak görünüyor.", videoNote: "Tarihin tozlu raflarında." },
   { id: 58, name: "Ödero", status: "neutral", category: "Diğer", description: "Para havalesi ve fatura yok.", videoNote: "Ek izinleri yok." },
   { id: 59, name: "Bupara", status: "neutral", category: "Diğer", description: "Yakında gelecek.", videoNote: "Havale ve fatura yok." },
   { id: 60, name: "Çözüm (Elmacık)", status: "neutral", category: "Diğer", description: "İsmi sanı duyulmamış.", videoNote: "Çürük." },
   { id: 61, name: "TK Pay", status: "neutral", category: "Ulaşım", description: "THY ödeme sistemi.", videoNote: "Starbucks hesabı gibi." },
   { id: 62, name: "Vakıf Pay", status: "inactive", category: "Banka Destekli", description: "Cüzdan hizmetleri kapatıldı.", videoNote: "Şu an kapalı bir sistem." },
   { id: 63, name: "Vision Pay", status: "neutral", category: "Diğer", description: "Sitede bilgi yok.", videoNote: "Garip bir sistem." },
-  { id: 64, name: "Yemek Pay", status: "neutral", category: "E-Ticaret", description: "Yemeksepeti POS hizmeti.", videoNote: "Havale/Fatura yok." },
-  { id: 65, name: "Bir Pay", status: "banned", category: "Yasaklı/Riskli", description: "Yayıncı tarafından ağır eleştirilen ve telif atan kurum.", videoNote: "Uzak durulmalı, eleştiriye kapalılar." },
+  { id: 64, name: "YemekPay", status: "neutral", category: "E-Ticaret", description: "Yemeksepeti POS hizmeti.", videoNote: "Havale/Fatura yok." },
+  { id: 65, name: "1000Pay (BinPay)", status: "banned", category: "Yasaklı/Riskli", description: "Yayıncı tarafından ağır eleştirilen ve telif atan kurum. 1000 Yatırımlar Holding iştiraki.", videoNote: "Uzak durulmalı, eleştiriye kapalılar." },
 ];
 
 // --- Helper Fonksiyonlar ---
@@ -288,7 +288,7 @@ const getCompanyUrl = (companyName) => {
   const urlMap = {
     "Papara": "https://www.papara.com",
     "Tosla": "https://tosla.com",
-    "Pep": "https://www.peple.com.tr",
+    "PeP": "https://www.peple.com.tr",
     "Hadi (TomBank)": "https://www.hadikredi.com",
     "Param": "https://param.com.tr",
     "Hepsipay": "https://www.hepsipay.com",
@@ -301,7 +301,11 @@ const getCompanyUrl = (companyName) => {
     "Iyzico": "https://www.iyzico.com",
     "PayTR": "https://www.paytr.com",
     "Moka": "https://www.moka.com",
-    "İstanbulKart": "https://www.istanbulkart.istanbul"
+    "İstanbulKart": "https://www.istanbulkart.istanbul",
+    "Manibux": "https://www.manibux.com",
+    "MoneyPay": "https://moneypay.com.tr",
+    "Turan": "https://turan.app",
+    "N Kolay": "https://www.nkolay.com.tr"
   };
 
   return urlMap[companyName] || `https://www.google.com/search?q=${companyName}+fintech+resmi+sitesi`;
@@ -516,7 +520,6 @@ const App = () => {
               {/* Status Banner */}
               <div className={`flex items-center gap-3 p-4 rounded-xl border ${getStatusConfig(selectedCompany.status).border} ${getStatusConfig(selectedCompany.status).bg}`}>
                 {React.createElement(getStatusConfig(selectedCompany.status).icon, { className: `w-6 h-6 ${getStatusConfig(selectedCompany.status).text.replace('text-', 'text-emerald-500').replace('text-blue', 'text-blue-400')}` })} 
-                {/* Note: Tailwind color class extraction is tricky in dynamic, simplifying below */}
                 <div className="flex-1">
                   <p className="text-sm font-bold text-white uppercase tracking-wider mb-0.5">
                     Mevcut Durum: {getStatusConfig(selectedCompany.status).text}
