@@ -1,16 +1,80 @@
-# React + Vite
+# 🇹🇷 Türkiye Fintech Radar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Türkiye'de faaliyet gösteren **elektronik para ve ödeme kuruluşlarını** tek bir çatı altında toplayan,  
+**yasal durumlarını**, **güvenilirliklerini** ve **risk seviyelerini** sade ve anlaşılır şekilde sunan  
+**bağımsız bir web rehberi**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Projenin Amacı
 
-## React Compiler
+Bu projenin amacı, **6493 sayılı Kanun** kapsamında hizmet veren fintech kuruluşlarını;
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Hangileri **aktif ve güvenilir?**
+- Hangileri **riskli veya belirsiz?**
+- Hangilerinin **faaliyeti durdurulmuş veya yasaklı?**
 
-## Expanding the ESLint configuration
+sorularına **tek bakışta cevap verecek** şekilde sınıflandırmaktır.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Kullanıcıların:
+- Bilgi kirliliğinden uzak
+- Karşılaştırılabilir
+- Güncel ve şeffaf
+
+bir referans kaynağa ulaşması hedeflenmiştir.
+
+---
+
+## 🚦 Durum Göstergeleri
+
+| Gösterge | Anlamı |
+|--------|-------|
+| 🟢 **Güvenli / Aktif** | Yasal olarak faaliyet gösteriyor, belirgin bir sorun bulunmuyor |
+| 🟡 **Dikkat** | Belirsizlik, kullanıcı şikayetleri veya sınırlı veri mevcut |
+| 🔴 **Yasaklı** | Faaliyet izni yok, durdurulmuş veya yasaklanmış |
+
+---
+
+## 🔗 Canlı Önizleme
+
+<p align="center">
+  <a href="https://ConquerorX.github.io/fintech" target="_blank">
+    <img src="https://img.shields.io/badge/Canlı%20Önizleme-Siteyi%20Aç-0f172a?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <img src="./ss.png" alt="Türkiye Fintech Radar Ekran Görüntüsü" width="900"/>
+</p>
+
+---
+
+## 📚 Veri Kaynakları
+
+Bu projede yer alan bilgiler ve analiz notları:
+
+- 📺 **Kapsolia YouTube Kanalı**  
+  *[“Türkiye'deki Tüm Fintech Kuruluşları İncelemesi” videosu](https://www.youtube.com/watch?v=2sYJMMPwbdI)*
+- 🏦 **TCMB (Türkiye Cumhuriyet Merkez Bankası)**  
+  açık ve herkese erişilebilir resmi kaynaklar
+
+referans alınarak hazırlanmıştır.
+
+---
+
+## ⚠️ Yasal Uyarı
+
+Bu projede sunulan bilgiler **yatırım tavsiyesi değildir**.  
+Fintech kuruluşlarının yasal statüleri zamanla değişebilir.
+
+📌 **En güncel ve kesin bilgiler için:**
+- TCMB’nin resmi duyuruları
+- İlgili kuruluşların kendi web siteleri
+
+mutlaka kontrol edilmelidir.
+
+---
+
+**Made with ❤️ by ConquerorX**
